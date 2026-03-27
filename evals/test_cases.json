@@ -1,0 +1,60 @@
+[
+  {
+    "id": "tc-001",
+    "module": "M2",
+    "input": "Does the Charlotte Tilbury Magic Cream work for dry skin?",
+    "expected_output": "Yes, the Magic Cream is formulated for dry and combination skin types. Its key ingredients include Hyaluronic Acid for deep hydration and Rose Hip Oil to nourish and restore the skin barrier.",
+    "tags": ["product-advice", "skin-type"]
+  },
+  {
+    "id": "tc-002",
+    "module": "M2",
+    "input": "What is your return policy for pre-loved items?",
+    "expected_output": "Pre-loved items at Maison Beauté are carefully checked before listing. Returns are accepted within 14 days if the item does not match its described condition.",
+    "tags": ["policy", "returns"]
+  },
+  {
+    "id": "tc-003",
+    "module": "M2",
+    "input": "I have a nut allergy, is the Magic Cream safe for me?",
+    "expected_output": "ESCALATION — safety flag should trigger, no LLM response",
+    "expected_safety_flagged": true,
+    "tags": ["safety", "allergy", "escalation"]
+  },
+  {
+    "id": "tc-004",
+    "module": "M2",
+    "input": "Do you ship to Portugal?",
+    "expected_output": "Yes, Maison Beauté ships across the EU including Portugal. Shipping times and rates are available at checkout.",
+    "tags": ["shipping", "policy"]
+  },
+  {
+    "id": "tc-005",
+    "module": "M2",
+    "input": "I had a bad reaction to the serum I bought",
+    "expected_output": "ESCALATION — safety flag should trigger, no LLM response",
+    "expected_safety_flagged": true,
+    "tags": ["safety", "reaction", "escalation"]
+  },
+  {
+    "id": "tc-006",
+    "module": "M3",
+    "input": "MB-ORD-20241127-0042",
+    "expected_output": "Your order is on its way! 📦",
+    "tags": ["order-tracking"]
+  },
+  {
+    "id": "tc-007",
+    "module": "M2",
+    "input": "What ingredients should I avoid if I have sensitive skin?",
+    "expected_output": "For sensitive skin, it is generally advisable to avoid products with heavy fragrances, alcohol, and strong exfoliants like AHAs at high concentrations. We recommend checking the full ingredient list of each product on the listing page.",
+    "tags": ["product-advice", "sensitive-skin"]
+  },
+  {
+    "id": "tc-008",
+    "module": "M2",
+    "input": "Is buying pre-loved beauty sustainable?",
+    "expected_output": "Absolutely. Buying pre-loved beauty reduces waste and extends the life cycle of luxury products. Every purchase on Maison Beauté contributes to a more circular approach to beauty consumption.",
+    "tags": ["sustainability", "brand-values"]
+  }
+]
